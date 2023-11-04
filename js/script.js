@@ -1,7 +1,17 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('.main'),
-//     smooth: true
-// });
+window.addEventListener('scroll', function() {
+    const nav = document.getElementById('nav');
+    if (window.scrollY > 10) {
+      nav.classList.add('scroll');
+    } else {
+      nav.classList.remove('scroll');
+    }
+});
+
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true,
+});
 
 const boardingDate = document.getElementById('boarding-date');
 const returningDate = document.getElementById('returning-date');
@@ -27,4 +37,5 @@ function search() {
     console.log('Boarding Date:', boardingDateValue);
     console.log('Returning Date:', returningDateValue);
 }
+
 

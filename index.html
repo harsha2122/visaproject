@@ -10,28 +10,30 @@
                 
 </head>
 <body>
-    <div class="main">
 
-        <!--Navbar starts-->
-        <div class="nav">
-            <div class="part1">
-                <img class="logo" src="./assets/logo.png" alt="logo" />
-            </div>
-            <div class="part2">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-            </div>
-            <div class="part3">
-                <button>
-                    Sign up
-                </button>
-                <button>
-                    Login
-                </button>
-            </div>
+    <!--Navbar starts-->
+    <div id="nav" data-scroll-sticky >
+        <div class="part1">
+            <img class="logo" src="./assets/logo.png" alt="logo" />
         </div>
-        <!--Navbar ends-->
-        
+        <div class="part2">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+        </div>
+        <div class="part3">
+            <button>
+                Sign up
+            </button>
+            <button>
+                Login
+            </button>
+        </div>
+    </div>
+    <!--Navbar ends-->
+
+
+    <div class="main" data-scroll-container>
+
         <!--Hero starts-->
         <div class="page1">
             <h1>
@@ -54,22 +56,79 @@
         <div class="vacation">
             <h1>Top vacation Destinations</h1>
             <div class="cards">
-                <div class="card">
-
+                <div class="card-vac">
+                    <img src="./assets/c2.png" />
+                    <div class="gradient-layer"></div>
+                    <h1 class="vac-title">Bali, Indonesia</h1>
+                </div>
+                <div class="card-vac">
+                    <img src="./assets/c3.png" />
+                    <div class="gradient-layer"></div>
+                    <h1 class="vac-title">Kerry, Ireland</h1>
+                </div>
+                <div class="card-vac">
+                    <img src="./assets/c4.png" />
+                    <div class="gradient-layer"></div>
+                    <h1 class="vac-title">Sydney, Australia</h1>
+                </div>
+                <div class="card-vac">
+                    <img src="./assets/c2.png" />
+                    <div class="gradient-layer"></div>
+                    <h1 class="vac-title">Bali, Indonesia</h1>
+                </div>
+                <div class="card-vac">
+                    <img src="./assets/c3.png" />
+                    <div class="gradient-layer"></div>
+                    <h1 class="vac-title">Kerry, Ireland</h1>
+                </div>
+                <div class="card-vac">
+                    <img src="./assets/c4.png" />
+                    <div class="gradient-layer"></div>
+                    <h1 class="vac-title">Sydney, Australia</h1>
                 </div>
             </div>
         </div>
         <!--Page Intersection-->
 
-
+        <!--Page 2 -->
         <div class="page2">
+            <h1 class="head">Premium Offers In Premium Destinations </h1>
+            <div class="container">
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd1.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Mauritius</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
 
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
+        <!--Page 2 Ends -->
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/datepicker@1.0.10/dist/datepicker.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 
 </body>
 </html>
