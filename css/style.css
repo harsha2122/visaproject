@@ -83,9 +83,13 @@ html , body{
 .page1{
     width: 100vw;
     height: 120vh;
-    background: url(/assets/img1.png);
-    background-size: cover;
     position: relative;
+}
+
+.page1 .bgimg{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
     filter: contrast(110%);
 }
 
@@ -168,7 +172,6 @@ input::placeholder {
 }
 
 
-
 /*--------------------------------------------------- Hero Ends---------------------------------------------------*/
 
 /*-----------------------------------------------Page Intersection------------------------------------------------*/
@@ -178,6 +181,7 @@ input::placeholder {
     top: -27vh;
     left: 0;
     padding-left: 150px;
+    z-index: 101;
 }
 
 .vacation h1 {
