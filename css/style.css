@@ -1,0 +1,201 @@
+@import url('https://fonts.cdnfonts.com/css/inconsolata-2');
+
+                
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+html , body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main{
+    position: relative;
+}
+
+
+/*--------------------------------------------------- Navbar---------------------------------------------------*/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    padding: 40px 50px 20px 50px;
+    z-index: 10;
+}
+
+.nav .logo{
+    width: 11vw;
+}
+
+.nav .part2{
+    display: flex;
+    gap: 4vw;
+}
+
+.nav .part2 a{
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+.nav .part2 a:hover{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.nav .part3{
+    display: flex;
+    gap: 2vw;
+}
+
+.nav .part3 button{
+    padding: 10px 15px;
+    background: transparent;
+    color: #bababa;
+    border: 1px solid #bababa;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav .part3 button:hover{
+    color: #fff;
+}
+
+
+/*--------------------------------------------------- Navbar ends------------------------------------------------*/
+
+/*--------------------------------------------------- Hero Sec---------------------------------------------------*/
+.page1{
+    width: 100vw;
+    height: 120vh;
+    background: url(/assets/img1.png);
+    background-size: cover;
+    position: relative;
+    filter: contrast(110%);
+}
+
+.page1 h1{
+    width: 100%;
+    color: #dbdbdb;
+    position: absolute;
+    font-family: 'Inconsolata', sans-serif;
+    top: 35%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+}
+
+.page1 .search-bar{
+    width: 75vw;
+    height: 7vh;
+    margin: 0 auto;
+    background: #bebebe66;
+    top: 55%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    padding: 0px;
+    width: 75vw;
+}
+
+
+input[type="text"], input[type="date"] {
+    padding: 10px 0px;
+    background: transparent;
+    color: #dadada;
+    border: none;
+    font-size: 1vw;
+    width: 19%;
+    left: -10px;
+    position: relative;
+}
+
+input::placeholder {
+    color: #dadada;
+    font-size: 1vw;
+}
+
+
+.search-container button {
+    width: 14%;
+    padding: 1.2vh 0px ;
+    background-color: #fff;
+    color: #3498db;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-right: -25px;
+}
+
+.page1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #fff, transparent);
+    z-index: 100;
+}
+
+
+
+/*--------------------------------------------------- Hero Ends---------------------------------------------------*/
+
+
+
+/*-----------------------------------------------Page Intersection------------------------------------------------*/
+
+.vacation{
+    position: relative;
+    top: -27vh;
+    left: 0;
+    padding-left: 150px;
+}  
+
+.vacation h1{
+    color: #dadada;
+    font-size: 2.5vw;
+}
+
+
+
+/*--------------------------------------------Page Intersection Ends------------------------------------------------*/
+
+
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
