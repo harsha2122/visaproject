@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visa 24/7</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./css/style.css">
 
                 
@@ -42,10 +42,12 @@
             </h1>
             <div class="search-bar">
                 <div class="search-container">
-                    <input type="text" id="journey-from" placeholder="From"><span class="icon-search"></span>
+                    <input type="text" id="journey-from" placeholder="From">
                     <input type="text" id="journey-to" placeholder="To">
-                    <input style="padding: 0px 20px;" type="date" id="boarding-date" placeholder="Boarding On">
-                    <input style="padding: 0px 20px;" type="date" id="returning-date" placeholder="Returning On">
+                    <input type="text" class="datepicker" id="datepicker1" placeholder="Boarding Date">
+                    <input type="text" class="datepicker" id="datepicker2" placeholder="Returning Date">
+                    <!-- <input style="padding: 0px 20px;" type="date" id="boarding-date" placeholder="Boarding On">
+                    <input style="padding: 0px 20px;" type="date" id="returning-date" placeholder="Returning On"> -->
                     <button onclick="search()">Search</button>
                 </div>
             </div>
@@ -91,6 +93,7 @@
         </div>
         <!--Page Intersection-->
 
+
         <!--Page 2 -->
         <div class="page2">
             <h1 class="head">Premium Offers In Premium Destinations </h1>
@@ -98,6 +101,93 @@
                 <div class="cards-single">
                     <div class="img-container">
                         <img src="./assets/cd1.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Havelock</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd2.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Whitsunday Island</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd3.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Maldives</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd4.png" alt="" />
                     </div>
                     <div class="title">
                         <h1 class="heading">Mauritius</h1>
@@ -119,17 +209,490 @@
                     </div>
                     <div class="card-price">
                         <del class="del">₹88,952</del>
-                        
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd1.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Havelock</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd2.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Whitsunday Islands</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd1.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Havelock</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd2.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Whitsunday Island</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd3.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Maldives</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd4.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Mauritius</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd1.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Havelock</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd2.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Whitsunday Islands</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd1.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Havelock</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd2.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Whitsunday Island</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd3.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Maldives</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd4.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Mauritius</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd1.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Havelock</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-single">
+                    <div class="img-container">
+                        <img src="./assets/cd2.png" alt="" />
+                    </div>
+                    <div class="title">
+                        <h1 class="heading">Whitsunday Islands</h1>
+                        <span class="rating">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0318 8.38835L14.5745 7.59522L12.1349 2.64945C12.0683 2.51403 11.9586 2.40442 11.8232 2.33778C11.4836 2.17013 11.0709 2.30984 10.9011 2.64945L8.46157 7.59522L3.00424 8.38835C2.85379 8.40984 2.71622 8.48077 2.6109 8.58824C2.48358 8.71911 2.41341 8.89517 2.41583 9.07775C2.41825 9.26032 2.49305 9.43447 2.6238 9.56192L6.57225 13.4115L5.63941 18.8473C5.61753 18.9738 5.63153 19.1038 5.6798 19.2227C5.72807 19.3416 5.8087 19.4446 5.91253 19.52C6.01636 19.5954 6.13924 19.6403 6.26725 19.6494C6.39525 19.6585 6.52325 19.6316 6.63673 19.5717L11.518 17.0053L16.3993 19.5717C16.5326 19.6426 16.6873 19.6662 16.8356 19.6405C17.2096 19.576 17.4611 19.2213 17.3966 18.8473L16.4638 13.4115L20.4122 9.56192C20.5197 9.4566 20.5906 9.31904 20.6121 9.16858C20.6702 8.79243 20.4079 8.44423 20.0318 8.38835Z" fill="black"/>
+                            </svg>
+                            4.7
+                        </span>
+
+                    </div>
+                    <div class="title-2">Tourist Visa</div>
+                    <div class="card-info">
+                        <ul>
+                            <li>Approval Chances 90%</li>
+                            <li>Visa within 6 Days</li>
+                            <li>Curious Corner</li>
+                        </ul>  
+                    </div>
+                    <div class="card-price">
+                        <del class="del">₹88,952</del>
+                        <div class="amount">
+                            ₹88,952 <span class="per">Per Person</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--Page 2 Ends -->
+
+
+        <!--Services Section -->
+        <div class="page3">
+            <img class="img-service" src="./assets/contact.png" />
+            
+            <div class="services">
+                <h1 class="service-head">Why Choose Us</h1>
+                <p class="service-para">Enjoy different experiences in every place you visit and<br> discover new and affordable adventures of course.</p>
+                <div class="service-container1">
+                    <img class="inoc" src="./assets/co1.png" alt=""/>
+                    <div class="service-text">
+                        <h2>On-Time Visa Approval</h2>
+                        <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
+                    </div>
+                </div>
+                <div class="service-container2">
+                    <img class="inoc" src="./assets/co2.png" alt=""/>
+                    <div class="service-text">
+                        <h2>90% Approval Rate</h2>
+                        <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
+                    </div>
+                </div>
+                <div class="service-container2">
+                    <img class="inoc" src="./assets/co3.png" alt=""/>
+                    <div class="service-text">
+                        <h2>Best Price</h2>
+                        <p>Vitae donec pellentesque a aliquam et ultricies auctor.</p>
+                    </div>
+                </div>
+
+                <a class="cta" href="#">Get Yours Now <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <!--services Ends -->
+
+
+        <!--Testimonial Starts -->
+        <div class="page4">
+            <img class="testimonial-bg" src="/assets/testimonial.png" alt="">
+            <div class="testimonial-front">
+                <h2>PROMOTION</h2>
+                <h1>See What Our Clients Say<br> About Us</h1>
+            </div>
+        </div>
+        <!--Testimonial Ends -->
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/datepicker@1.0.10/dist/datepicker.min.js"></script>
     <script src="./js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $( function() {
+      $("#datepicker1").datepicker({
+        minDate: 0 // Set minimum date to today (disable past dates)
+      });
 
+      $(".datepicker").datepicker();
+    });
+    </script>
 </body>
 </html>
