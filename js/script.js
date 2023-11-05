@@ -1,26 +1,30 @@
-window.addEventListener('scroll', function() {
-    var nav = document.getElementById('nav');
-    
-    // Check the scroll position
-    if (window.scrollY > 0) {
-        nav.classList.add('scrolled'); // Add class when scrolled
-        nav.classList.remove('transparent'); // Remove class when scrolled
-    } else {
-        nav.classList.remove('scrolled'); // Remove class when at the top
-        nav.classList.add('transparent'); // Add class when at the top
-    }
-});
+function initLocoScroll() {
+    const locoScroll = new LocomotiveScroll({
+        el: document.querySelector(".main"),
+        smooth: true
+    });
 
+    locoScroll.on("scroll", (e) => {
+        const nav = document.getElementById("nav");
+        const scrollDistance = e.scroll.y;
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.main'),
-    smooth: true,
-});
+        const page1 = document.querySelector(".page1");
+        const page1Position = page1.offsetTop;
+        const changeColorPoint = page1Position + page1.offsetHeight;
 
+        if (scrollDistance > changeColorPoint) {
+            // Use GSAP to animate the background color change
+            gsap.to(nav, {
+                backgroundColor: "#000", // Change this to the desired color
+                duration: 0.5 // Adjust duration as needed
+            });
+        } else {
+            gsap.to(nav, {
+                backgroundColor: "rgba(0,0,0,0)",
+                duration: 0.5
+            });
+        }
+    });
+}
 
-
-
-
-
-
-
+initLocoScroll();
