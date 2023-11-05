@@ -1,9 +1,13 @@
 window.addEventListener('scroll', function() {
-    const nav = document.getElementById('nav');
-    if (window.scrollY > 10) {
-      nav.classList.add('scroll');
+    var nav = document.getElementById('nav');
+    
+    // Check the scroll position
+    if (window.scrollY > 0) {
+        nav.classList.add('scrolled'); // Add class when scrolled
+        nav.classList.remove('transparent'); // Remove class when scrolled
     } else {
-      nav.classList.remove('scroll');
+        nav.classList.remove('scrolled'); // Remove class when at the top
+        nav.classList.add('transparent'); // Add class when at the top
     }
 });
 
@@ -12,6 +16,10 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('.main'),
     smooth: true,
 });
+
+
+
+
 
 
 

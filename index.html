@@ -5,6 +5,7 @@
     <title>Visa 24/7</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
                 
@@ -12,27 +13,31 @@
 <body>
 
     <!--Navbar starts-->
-    <div id="nav" data-scroll-sticky >
-        <div class="part1">
-            <img class="logo" src="./assets/logo.png" alt="logo" />
-        </div>
-        <div class="part2">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-        </div>
-        <div class="part3">
-            <button>
-                Sign up
-            </button>
-            <button>
-                Login
-            </button>
-        </div>
-    </div>
+
     <!--Navbar ends-->
 
 
+
+
     <div class="main" data-scroll-container>
+    
+        <div id="nav" class="transparent">
+            <div class="part1">
+                <img class="logo" src="./assets/logo.png" alt="logo" />
+            </div>
+            <div class="part2">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+            </div>
+            <div class="part3">
+                <button>
+                    Sign up
+                </button>
+                <button>
+                    Login
+                </button>
+            </div>
+        </div>
 
         <!--Hero starts-->
         <div class="page1">
@@ -674,8 +679,80 @@
                 <h2>PROMOTION</h2>
                 <h1>See What Our Clients Say<br> About Us</h1>
             </div>
+            
         </div>
         <!--Testimonial Ends -->
+
+
+        <!--Footer starts -->  
+        <footer class="footer-sec">
+            <img class="footer-bg" src="./assets/footer.png" alt="">
+            <div class="mains">
+            <div class="logo row">
+                <div class="footer-header">
+                <img src="./assets/logos.png" class="manik" alt="">
+                </div>
+                <div class="logo-des">
+                <p>Travel helps companies<br> manage payments easily..</p>
+                <div class="icons">
+                    <a href="#"><i class="social-icon ri-facebook-fill"></i></a>
+                    <a href="#"><i class="social-icon ri-instagram-line"></i></a>
+                    <a href="#"><i class="social-icon ri-linkedin-fill"></i></a>
+                    <a href="#"><i class="social-icon ri-infinity-fill"></i></i></a>
+                </div>
+                </div>
+            </div>
+            
+            <div class="office row">
+                <div class="footer-header">
+                    <h3>Company</h3>
+                    </div>                   
+                    <div class="link-des">
+                    <a href="#" class="footer-links">About</a>
+                    <a href="#" class="footer-links">Career</a>
+                    <a href="#" class="footer-links">Blog</a>
+                    <a href="#" class="footer-links">Pricing</a>
+                </div>
+            </div>
+            
+            
+            <div class="link row">
+                <div class="footer-header">
+                <h3>Destinations</h3>
+                </div> 
+                <div class="link-des">
+                <a href="#" class="footer-links">Maldives</a>
+                <a href="#" class="footer-links">Los Angeles</a>
+                <a href="#" class="footer-links">Las Vegas</a>
+                <a href="#" class="footer-links">Torronto</a>
+                </div>
+            </div>
+            
+            
+            <div class="newsletter row">
+                <div class="footer-header">
+                <h3>Join Our Newsletter</h3>
+                </div>
+                <div class="newsletter-des">
+                <div class="subcribe">
+                    <input type="mail" placeholder = "Your email address" required>
+                    <button class="butt">Subscribe</button>
+                </div>
+                <div class="icons">
+                    <p style="font-size: 15px;">• Will send you weekly updates for your better tour packages</p>
+                </div>
+                </div>
+            </div>
+            
+            
+            </div>
+            <div class="copyright">
+            <hr>
+                <p>Copyright @ Xpro 2022. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!--Footer Ends -->        
 
 
     </div>
@@ -688,7 +765,7 @@
     <script>
       $( function() {
       $("#datepicker1").datepicker({
-        minDate: 0 // Set minimum date to today (disable past dates)
+        minDate: 0
       });
 
       $(".datepicker").datepicker();
