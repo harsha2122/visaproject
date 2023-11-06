@@ -13,10 +13,10 @@ function initLocoScroll() {
         const changeColorPoint = page1Position + page1.offsetHeight;
 
         if (scrollDistance > changeColorPoint) {
-            // Use GSAP to animate the background color change
+
             gsap.to(nav, {
-                backgroundColor: "#000", // Change this to the desired color
-                duration: 0.5 // Adjust duration as needed
+                backgroundColor: "#000", 
+                duration: 0.5 
             });
         } else {
             gsap.to(nav, {
@@ -28,3 +28,18 @@ function initLocoScroll() {
 }
 
 initLocoScroll();
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
