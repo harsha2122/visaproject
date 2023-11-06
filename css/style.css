@@ -29,7 +29,7 @@ html , body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 130px;
+    height: 100px;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,7 +37,7 @@ html , body{
     z-index: 102;
 }
 
-#nav .part1{
+#nav .part11{
     display: flex;
     align-items: center;
 }
@@ -47,29 +47,29 @@ html , body{
     
 }
 
-#nav .part2{
+#nav .part21{
     display: flex;
     gap: 4vw;
-    align-items: top;
+    align-items: center;
 }
 
-#nav .part2 a{
+#nav .part21 a{
     text-decoration: none;
     color: #cfcfcf;
     font-size: 18px;
 }
 
-#nav .part2 a:hover{
+#nav .part21 a:hover{
     text-decoration: underline;
     text-underline-offset: 8px;
 }
 
-#nav .part3{
+#nav .part31{
     display: flex;
     gap: 2vw;
 }
 
-#nav .part3 button{
+#nav .part31 button{
     padding: 10px 15px;
     background: transparent;
     color: #d8d8d8;
@@ -80,11 +80,205 @@ html , body{
     font-size: 16px;
 }
 
-#nav .part3 button:hover{
-    color: #fff;
+#nav .part31 button:hover{
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 
+#nav, #nav1 {
+  transition: opacity 0.5s ease;
+}
+
+#nav, #nav1 {
+  opacity: 1;
+}
+
+#nav1 {
+  display: none;
+}
+
+
+
+#nav1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px 50px 30px 50px;
+  z-index: 102;
+  background: #fff;
+  border-bottom: 2px solid gray;
+}
+
+#nav1 .part1{
+  display: flex;
+  align-items: center;
+}
+
+#nav1 .logo{
+  width: 11vw;
+  
+}
+
+#nav1 .part2{
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#nav1 .part2-top{
+  display: flex;
+  gap: 4vw;
+  align-items: center;
+}
+
+#nav1 .part2 a{
+  text-decoration: none;
+  color: #626262;
+  font-size: 18px;
+}
+
+#nav1 .part2 a:hover{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+#nav1 .part3{
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+
+#nav1 .part3 button{
+  padding: 10px 15px;
+  background: transparent;
+  color: #626262;
+  border: 1px solid #626262;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 40px;
+  font-size: 16px;
+}
+
+#nav1 .part3 button:hover{
+  color: #626262;
+}
+
+
+
+
+
+#nav1 .search-bar{
+  width: 55vw;
+  height: 7vh;
+  margin: 0 auto;
+  background: #dadada;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#nav1 .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  padding: 10px;
+  width: 75vw;
+}
+
+
+
+#nav1 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+font-weight: normal;
+color: #000000;
+background: transparent;
+border: none;
+text-align: center;
+}
+
+#nav1 .ui-datepicker td a {
+  display: block;
+  padding: 0.2em;
+
+  text-decoration: none;
+}
+
+#nav1 .ui-datepicker td a:hover {
+  display: block;
+  padding: 0.2em;
+  text-decoration: none;
+  background: rgb(0, 174, 255);
+  color: #fff;
+  border-radius: 2px;
+}
+
+
+
+
+#nav1 .ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+background-image: none; 
+text-indent: 0; 
+color: #000000; 
+font-weight: bold;
+border: none;
+outline: none;
+}
+
+
+#nav1 .ui-datepicker .ui-datepicker-prev span::before {
+  content: '⇚'; 
+}
+
+#nav1 .ui-datepicker .ui-datepicker-next span::before {
+  content: '⇛';
+}
+
+
+#nav1 .ui-datepicker-header{
+  font-weight: 300;
+}
+
+
+#nav1 input[type="text"], input[type="date"] {
+  padding: 10px 0px;
+  background: transparent;
+  color: #000;
+  border: none;
+  font-size: 1vw;
+  width: 19%;
+  left: -10px;
+  position: relative;
+}
+
+#nav1 input::placeholder {
+  color: #4f4f4f;
+  font-size: 1vw;
+}
+
+
+#nav1 .search-container button {
+  width: 14%;
+  padding: 1.2vh 0px ;
+  background-color: #000;
+  color: #fff;
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-right: -25px;
+}
 /*--------------------------------------------------- Navbar ends------------------------------------------------*/
 
 /*--------------------------------------------------- Hero Sec---------------------------------------------------*/
@@ -165,24 +359,24 @@ html , body{
 
 
 
-/* Hide the default icons and add text labels for previous and next buttons */
+
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
-  background-image: none; /* Remove default icon */
-  text-indent: 0; /* Reset text indent */
-  color: #000000; /* Text color for buttons */
-  font-weight: bold; /* Adjust text appearance */
+  background-image: none; 
+  text-indent: 0; 
+  color: #000000; 
+  font-weight: bold;
   border: none;
   outline: none;
 }
 
 
 .ui-datepicker .ui-datepicker-prev span::before {
-    content: '⇚'; /* Text for previous button */
+    content: '←'; 
   }
 
   .ui-datepicker .ui-datepicker-next span::before {
-    content: '⇛'; /* Text for next button */
+    content: '→';
   }
 
 
@@ -454,7 +648,6 @@ input::placeholder {
     flex-direction: column;
     position: relative;
     width: 40vw;
-    /* border: 2px solid black; */
     text-align: start;
     padding: 10px 0px;
 }
@@ -476,16 +669,6 @@ input::placeholder {
     text-align: left;
 }
 
-.page3 .service-container1{
-    display: flex;
-    flex-direction: row;
-    padding: 5px 30px;
-    align-items: center;
-    width: 90%;
-    border-radius: 10px;
-    margin-top: 50px;
-    box-shadow: 0 8px 17px rgba(0,0,0,.1);
-}
 
 .page3 .service-container2{
     display: flex;
@@ -495,6 +678,10 @@ input::placeholder {
     width: 90%;
     margin-top: 10px;
     border-radius: 10px;
+}
+
+.page3 .service-container2:hover{
+  box-shadow: 0 8px 17px rgba(0,0,0,.1);
 }
 
 .page3 .inoc{
@@ -638,7 +825,7 @@ input::placeholder {
   font-weight: 400;
   color: #333;
 }
-/* swiper button css */
+
 .nav-btn {
   height: 10px;
   width: 10px;
@@ -654,21 +841,20 @@ input::placeholder {
     content: none !important;
 }
 
-/* Set a fixed width and height to maintain the layout */
+
 .swiper-button-next, .swiper-button-prev {
-    width: 30px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
+    width: 30px; 
+    height: 20px; 
     color: #fff;
 }
 
-/* Example of adding text inside the buttons */
 .swiper-button-next::before {
-    content: "→"; /* Replace 'Next' with your desired text or icon */
+    content: "→"; 
     color: #fff;
 }
 
 .swiper-button-prev::before {
-    content: "←"; /* Replace 'Previous' with your desired text or icon */
+    content: "←"; 
     color: #fff;
 }
 .swiper-pagination-bullet {

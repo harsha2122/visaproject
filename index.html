@@ -19,12 +19,44 @@
 
         <!--Navbar starts-->      
         <div id="nav" data-scroll data-scroll-sticky data-scroll-target=".main" >
-            <div class="part1">
+            <div class="part11">
                 <img class="logo" src="./assets/logo.png" alt="logo" />
             </div>
-            <div class="part2">
+            <div class="part21">
                 <a href="">Home</a>
                 <a href="">About Us</a>
+            </div>
+            <div class="part31">
+                <button>
+                    Sign up
+                </button>
+                <button>
+                    Login
+                </button>
+            </div>
+        </div>
+
+
+        <div id="nav1" data-scroll data-scroll-sticky data-scroll-target=".main" >
+            <div class="part1">
+                <img class="logo" src="./assets/logo2.png" alt="logo" />
+            </div>
+            <div class="part2">
+                <div class="part2-top">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                </div>
+                <div class="part2-bottom">
+                    <div class="search-bar">
+                        <div class="search-container">
+                            <input type="text" id="journey-from" placeholder="From">
+                            <input type="text" id="journey-to" placeholder="To">
+                            <input type="text" class="datepicker" id="datepicker1" placeholder="Boarding Date">
+                            <input type="text" class="datepicker" id="datepicker2" placeholder="Returning Date">
+                            <button onclick="search()">Search</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="part3">
                 <button>
@@ -50,8 +82,6 @@
                     <input type="text" id="journey-to" placeholder="To">
                     <input type="text" class="datepicker" id="datepicker1" placeholder="Boarding Date">
                     <input type="text" class="datepicker" id="datepicker2" placeholder="Returning Date">
-                    <!-- <input style="padding: 0px 20px;" type="date" id="boarding-date" placeholder="Boarding On">
-                    <input style="padding: 0px 20px;" type="date" id="returning-date" placeholder="Returning On"> -->
                     <button onclick="search()">Search</button>
                 </div>
             </div>
@@ -640,7 +670,7 @@
             <div class="services">
                 <h1 class="service-head">Why Choose Us</h1>
                 <p class="service-para">Enjoy different experiences in every place you visit and<br> discover new and affordable adventures of course.</p>
-                <div class="service-container1">
+                <div class="service-container2">
                     <img class="inoc" src="./assets/co1.png" alt=""/>
                     <div class="service-text">
                         <h2>On-Time Visa Approval</h2>

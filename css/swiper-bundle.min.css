@@ -240,6 +240,7 @@
 .swiper-button-prev,.swiper-rtl .swiper-button-next {
 	left: 10px;
     width: 40px;
+    height: 40px;
 	right: auto;
 }
 
@@ -250,6 +251,7 @@
 .swiper-button-next,.swiper-rtl .swiper-button-prev {
 	right: 10px;
     width: 40px;
+    height: 40px;
 	left: auto;
 }
 
@@ -318,7 +320,7 @@
 }
 
 .swiper-pagination-bullet {
-	width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
+	width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,20px));
 	height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
 	display: inline-block;
 	border-radius: 50%;
