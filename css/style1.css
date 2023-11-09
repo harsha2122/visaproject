@@ -11,6 +11,11 @@
     outline: none;
 }
 
+a{
+  text-decoration: none;
+  color: #000;
+}
+
 
 html , body{
     height: 100%;
@@ -1170,8 +1175,7 @@ footer{
   }
 
   .page1::before {
-    bottom: 390px;
-    height: 100px;
+    display: none;
 }
 
   .page1 h1 {
@@ -1325,6 +1329,7 @@ footer{
 
   .row{
     grid-column: 1/4;
+    margin-left: -10px;
   }
 }
 

@@ -76,3 +76,4 @@ var swiper = new Swiper(".mySwiper", {
         minDate: 0
     });
     });
+
