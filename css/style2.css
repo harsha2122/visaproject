@@ -32,7 +32,7 @@ a{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
@@ -61,6 +61,7 @@ a{
     text-decoration: none;
     color: #626262;
     font-size: 18px;
+    font-family: 'Abhaya Libre', sans-serif;
   }
   
   #nav1 .part2 a:hover{
@@ -83,6 +84,7 @@ a{
     cursor: pointer;
     height: 40px;
     font-size: 16px;
+    font-family: 'Abhaya Libre', sans-serif;
   }
   
   #nav1 .part3 button:hover{
@@ -113,6 +115,7 @@ a{
 .image-section .img-container img{
     width: 100vw;
     height: 100vh;
+    filter: blur(2px);
 }
 
 .image-section .hero-text{
@@ -123,6 +126,7 @@ a{
     font-size: 80px;
     color: #fff;
     letter-spacing: 4px;
+    font-family: 'Abhaya Libre', sans-serif;
 }
 
 /*---------------------------------------------Image Section Ends--------------------------------------------*/
@@ -160,7 +164,10 @@ a{
     height: 200px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
+
+
 
 .choice .days{
     width: 25%;
@@ -225,6 +232,11 @@ a{
     gap: 10px;
 }
 
+.choice .ticket-input {
+  display: none;
+}
+
+
 .choice .travel-to{
     width: 15%;
     display: flex;
@@ -270,7 +282,7 @@ a{
     height: 100%;
     border: 1px solid black;
     border-right: 2px dashed black;
-    border-left: none;
+    border-left: 1px solid #BADAD9;
     background: #BADAD9;
     border-radius: 0px 20px 20px 0px;
     writing-mode: vertical-lr;
@@ -633,6 +645,7 @@ footer{
   .footer-header{
     font-size: 1.2rem;
     margin-bottom: 40px;
+    font-family: 'Abhaya Libre', sans-serif;
   }
 
   .logo-des{
