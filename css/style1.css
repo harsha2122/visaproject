@@ -61,7 +61,8 @@ html , body{
 #nav .part21 a{
     text-decoration: none;
     color: #cfcfcf;
-    font-size: 18px;
+    font-size: 19px;
+    font-family: 'Abhaya Libre', sans-serif;
 }
 
 #nav .part21 a:hover{
@@ -82,7 +83,8 @@ html , body{
     border-radius: 7px;
     cursor: pointer;
     height: 40px;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Abhaya Libre', sans-serif;
 }
 
 #nav .part31 button:hover{
@@ -95,202 +97,74 @@ html , body{
 }
 
 
-#nav, #nav1 {
-  transition: opacity 0.5s ease;
-}
 
-#nav, #nav1 {
-  opacity: 1;
-}
-
-#nav1 {
+#mobile-menu {
+  gap: 30px;
   display: none;
-}
-
-
-
-
-
-
-
-#nav1{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 120px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 30px 50px 30px 50px;
-  z-index: 102;
-  background: #fff;
-  border-bottom: 2px solid gray;
-}
-
-#nav1 .part1{
-  display: flex;
-  align-items: center;
-}
-
-#nav1 .logo{
-  width: 11vw;
-  
-}
-
-#nav1 .part2{
-  display: flex;
-  gap: 4vw;
-  align-items: center;
   flex-direction: column;
-  gap: 40px;
-}
-
-#nav1 .part2-top{
-  display: flex;
-  gap: 4vw;
-  align-items: center;
-}
-
-#nav1 .part2 a{
-  text-decoration: none;
-  color: #626262;
-  font-size: 18px;
-}
-
-#nav1 .part2 a:hover{
-  text-decoration: underline;
-  text-underline-offset: 8px;
-}
-
-#nav1 .part3{
-  display: flex;
-  gap: 2vw;
-  align-items: center;
-}
-
-#nav1 .part3 button{
-  padding: 10px 15px;
-  background: transparent;
-  color: #626262;
-  border: 1px solid #626262;
-  border-radius: 7px;
-  cursor: pointer;
-  height: 40px;
-  font-size: 16px;
-}
-
-#nav1 .part3 button:hover{
-  color: #626262;
-}
-
-
-
-
-
-#nav1 .search-bar{
-  width: 55vw;
-  height: 7vh;
-  margin: 0 auto;
-  background: #dadada;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-#nav1 .search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  gap: 10px;
-  padding: 10px;
-  width: 75vw;
-}
-
-
-
-#nav1 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-font-weight: normal;
-color: #000000;
-background: transparent;
-border: none;
-text-align: center;
-}
-
-#nav1 .ui-datepicker td a {
-  display: block;
-  padding: 0.2em;
-
-  text-decoration: none;
-}
-
-#nav1 .ui-datepicker td a:hover {
-  display: block;
-  padding: 0.2em;
-  text-decoration: none;
-  background: rgb(0, 174, 255);
-  color: #fff;
-  border-radius: 2px;
-}
-
-
-
-
-#nav1 .ui-datepicker .ui-datepicker-prev span,
-.ui-datepicker .ui-datepicker-next span {
-background-image: none; 
-text-indent: 0; 
-color: #000000; 
-font-weight: bold;
-border: none;
-outline: none;
-}
-
-
-#nav1 .ui-datepicker .ui-datepicker-prev span::before {
-  content: '⇚'; 
-}
-
-#nav1 .ui-datepicker .ui-datepicker-next span::before {
-  content: '⇛';
-}
-
-
-#nav1 .ui-datepicker-header{
-  font-weight: 300;
-}
-
-
-#nav1 input[type="text"], input[type="date"] {
-  padding: 10px 0px;
-  background: transparent;
-  color: #000;
-  border: none;
-  font-size: 1vw;
-  width: 19%;
-  left: -10px;
-  position: relative;
-}
-
-#nav1 input::placeholder {
-  color: #4f4f4f;
-  font-size: 1vw;
-}
-
-
-#nav1 .search-container button {
-  width: 14%;
-  padding: 1.2vh 0px ;
+  position: absolute;
+  top: 80px;
+  left: 0;
   background-color: #000;
-  color: #fff;
-  font-size: 1vw;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  border-radius: 50px;
-  margin-right: -25px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 102;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu a {
+  text-decoration: none;
+  color: #fff; /* adjust as needed */
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  #nav .part21,
+  #nav .part31 {
+      display: none;
+  }
+
+  #nav i {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+  #nav .hamburger-open #mobile-menu {
+    transform: translateY(0);
+  }
+
+  #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    height: 80px;
+    padding: 15px;
+  }
+
+  #nav .logo{
+    width: 130px;
+  }
+
+  #nav .part21{
+    display: none;
+  }
+
+  #nav .part31{
+    display: none;
+  }
+
+  #nav i{
+    display: block;
+    font-size: 20px;
+    color: #fff;
+  }
 }
 
 
@@ -714,7 +588,7 @@ outline: none;
 
 .page3 .service-head{
     margin: 10px 0px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Abhaya Libre', sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 50px;
@@ -722,7 +596,7 @@ outline: none;
 }
 
 .page3 .service-para{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
     font-size: 1vw;
     font-weight: 400;
     letter-spacing: 0.15px;
@@ -756,6 +630,7 @@ outline: none;
 
 .page3 h2{
     font-size: 1.2vw;
+    font-family: 'Abhaya Libre', sans-serif;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0.15px;
@@ -764,7 +639,7 @@ outline: none;
 }
 
 .page3 p{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Abhaya Libre', sans-serif;
     font-size: 1vw;
     font-weight: 400;
     line-height: 22px;
@@ -865,6 +740,7 @@ outline: none;
   font-weight: 400;
   color: #333;
   line-height: 25px;
+  font-family: 'Abhaya Libre', sans-serif;
 }
 .slide .quote-icon {
   font-size: 30px;
@@ -921,7 +797,7 @@ outline: none;
   background-color: rgba(0, 0, 0, 0.8);
   height: 3px !important;
   border-radius: 0px !important;
-  width: 100px;
+  margin-top: -20px;
 
 }
 .swiper-pagination-bullet-active {
@@ -1122,37 +998,6 @@ footer{
 
 
 @media (max-width: 768px) {
-  #nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #000;
-    height: 80px;
-    padding: 15px;
-  }
-
-  #nav .logo{
-    width: 130px;
-  }
-
-  #nav .part21{
-    display: none;
-  }
-
-  #nav .part31{
-    display: none;
-  }
-
-  #nav i{
-    display: block;
-    font-size: 20px;
-    color: #fff;
-  }
-
-  #nav1 {
-    display: none;
-  }
-
   .page1 .bgimg {
     background-size: contain;
     height: 56%;

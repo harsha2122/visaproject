@@ -280,7 +280,7 @@
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction {
-	bottom: 10px;
+	bottom: 40px;
 	left: 0;
 	width: 100%;
 }
@@ -375,6 +375,7 @@ button.swiper-pagination-bullet {
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 	margin: 0 var(--swiper-pagination-bullet-horizontal-gap,4px);
     background-color: #DF6951;
+	width: 35px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic,.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {

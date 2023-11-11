@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style1.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
-                
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -34,40 +34,16 @@
                     Login
                 </button>
             </div>
-            <i class="ri-menu-3-fill"></i>
-        </div>
-
-
-        <div id="nav1" data-scroll data-scroll-sticky data-scroll-target=".main" >
-            <div class="part1">
-                <img class="logo" src="./assets/logo2.png" alt="logo" />
+            <i class="ri-menu-3-fill hamburger" onclick="toggleMenu()"></i>
+            <div id="mobile-menu">
+                
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Sign up</a>
+                <a href="#">Login</a>
+                
             </div>
-            <div class="part2">
-                <div class="part2-top">
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                </div>
-                <div class="part2-bottom">
-                    <div class="search-bar">
-                        <div class="search-container">
-                            <input type="text" id="journey-from" placeholder="From">
-                            <input type="text" id="journey-to" placeholder="To">
-                            <input type="text" class="datepicker" id="datepicker1" placeholder="Boarding Date">
-                            <input type="text" class="datepicker" id="datepicker2" placeholder="Returning Date">
-                            <button onclick="search()">Search</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="part3">
-                <button>
-                    Sign up
-                </button>
-                <button>
-                    Login
-                </button>
-            </div>
-        </div>
+        </div>        
         <!--Navbar ends-->
 
 
